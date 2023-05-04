@@ -1,0 +1,1 @@
+{"version":3,"names":[],"sources":["PixelFormat.ts"],"sourcesContent":["/**\n * Represents the pixel format of a `Frame`.\n * * `420v`: 420 YpCbCr 8 Bi-Planar Video Range\n * * `420f`: 420 YpCbCr 8 Bi-Planar Full Range\n * * `x420`: 420 YpCbCr 10 Bi-Planar Video Range\n */\nexport type PixelFormat = '420f' | '420v' | 'x420';\n"],"mappings":""}

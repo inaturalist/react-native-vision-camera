@@ -1,0 +1,1 @@
+{"version":3,"names":[],"sources":["Point.ts"],"sourcesContent":["/**\n * Represents a Point in a 2 dimensional coordinate system.\n */\nexport interface Point {\n  /**\n   * The X coordinate of this Point. (double)\n   */\n  x: number;\n  /**\n   * The Y coordinate of this Point. (double)\n   */\n  y: number;\n}\n"],"mappings":""}
