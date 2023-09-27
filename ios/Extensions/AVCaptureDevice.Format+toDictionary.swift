@@ -33,7 +33,7 @@ extension AVCaptureDevice.Format {
       "minISO": minISO,
       "fieldOfView": videoFieldOfView,
       "maxZoom": videoMaxZoomFactor,
-      "colorSpaces": supportedColorSpaces.map(\.descriptor),
+      // "colorSpaces": supportedColorSpaces.map(\.descriptor),
       "supportsVideoHDR": isVideoHDRSupported,
       "supportsPhotoHDR": false,
       "frameRateRanges": videoSupportedFrameRateRanges.map {

@@ -195,14 +195,14 @@ extension CameraView {
           device.automaticallyEnablesLowLightBoostWhenAvailable = lowLightBoost!.boolValue
         }
       }
-      if let colorSpace = colorSpace as String? {
-        guard let avColorSpace = try? AVCaptureColorSpace(string: colorSpace),
-              device.activeFormat.supportedColorSpaces.contains(avColorSpace) else {
-          invokeOnError(.format(.invalidColorSpace(colorSpace: colorSpace)))
-          return
-        }
-        device.activeColorSpace = avColorSpace
-      }
+      // if let colorSpace = colorSpace as String? {
+      //   guard let avColorSpace = try? AVCaptureColorSpace(string: colorSpace),
+      //         device.activeFormat.supportedColorSpaces.contains(avColorSpace) else {
+      //     invokeOnError(.format(.invalidColorSpace(colorSpace: colorSpace)))
+      //     return
+      //   }
+      //   device.activeColorSpace = avColorSpace
+      // }
 
       device.unlockForConfiguration()
       ReactLogger.log(level: .info, message: "Device successfully configured!")
